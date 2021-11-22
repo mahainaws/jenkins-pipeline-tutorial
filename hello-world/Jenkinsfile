@@ -11,6 +11,11 @@ pipeline {
                 echo 'Compile the source code' 
             }
         }
+        stage('Code Coverage Check') {
+            steps {
+                echo 'Run Coverage check against the application' 
+            }
+        }
         stage('Security Check') {
             steps {
                 echo 'Run the security check against the application' 
